@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+}
+.main-tac-container {
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.main-tac-header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background-color: white;
+  padding: 1rem 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.main-tac-header-data {
+  max-width: 800px;
+  margin: auto;
+  width: 100%;
+}
+.main-tac-header-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1.9rem;
+  line-height: 1.310344827586207em;
+  letter-spacing: 0.13em;
+  font-family: "Josefin Sans", sans-serif;
+}
+.main-tac-header-body {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 2rem;
+}
+.tac-inpput-field {
+  border: 2px solid #000;
+  padding: 14px 23px 16px;
+  color: #000;
+  font-size: 17px;
+  font-family: "Josefin Sans", sans-serif;
+  border-radius: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: 0;
+  line-height: 23px;
+  font-weight: 300;
+}
+.main-tac-body {
+  padding-top: 20rem;
+  max-width: 800px;
+  margin: auto;
+  width: 100%;
+}
+.main-tac-body-container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 3rem 4rem;
+}
+.tac-paragraph-title {
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  color: #b79d50;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 1.470588235294118em;
+  letter-spacing: 0.13em;
+}
+.tac-paragraph-body {
+  padding-left: 1.3rem;
+}
+.tac-paragraph-content {
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: left;
+  color: #737373;
+  line-height: 28px;
+}
+.tac-checkbox-class {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.tac-checkbox {
+  width: 1.4rem;
+  cursor: pointer;
+  height: 1.4rem;
+  margin-right: 1rem;
+  accent-color: black;
+}
+.main-tac-submit {
+  font-size: 12px;
+  line-height: 1.2em;
+  letter-spacing: 0.35em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 2rem 0 !important;
+  padding: 18px 46px 16px;
+  background: #b79d50;
+  max-width: 100%;
+  margin: auto;
+  border-color: #b79d50;
+  width: 100%;
+  color: #fff;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1000px) {
+  .main-tac-header-body {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .main-tac-header-title {
+    padding: 0 1rem;
+    font-size: 1.4rem;
+  }
+  .main-tac-header-body {
+    padding: 0 1rem;
+  }
+  .tac-inpput-field {
+    border: 2px solid #000;
+    padding: 10px 10px 10px;
+    color: #000;
+    font-size: 0.8rem;
+    font-family: "Josefin Sans", sans-serif;
+    border-radius: 0;
+    background-color: transparent;
+    cursor: pointer;
+    outline: 0;
+    line-height: 1.2rem;
+    font-weight: 300;
+  }
+  .main-tac-body {
+    padding-top: 23rem;
+    padding-left: 1rem;
+    width: calc(100% - 2rem);
+    padding-right: 1rem;
+  }
+  .main-tac-body-container {
+    padding: 1rem 2rem;
+  }
+}
